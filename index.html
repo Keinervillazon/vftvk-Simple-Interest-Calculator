@@ -1,16 +1,37 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Web App - Simple Interest Calculator</title>
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <body onload="myOnload()">
+        <div class="main">
+            <h1>Simple Interest Calculator</h1>
+            <form>    
+                <label for="amount" class="text-label">Amount</label>
+                <input type="number" id="amount" name="amount">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+                <label for="rate" class="text-label">Interest Rate</label>
+                <input type="range" id="rate" name="rate" min="0" max="20" step="0.01" value="0" onchange="rateChange()"> 
+                <span id="ratevalue">0%</span>
 
-        <button onclick="compute()">Compute</button>
+                <label for="years" class="text-label">No. of Years</label>
+                <select id="years" name="years">
+                 </select>
+
+                 <button type="button" onclick="compute()">Compute Interest</button> 
+
+            </form>
+            <div id="result">
+               <article>
+                   If you deposit  <span id="amountval"></span><br>
+                   at an interest rate of  <span id="rateval"></span><br>
+                   You will receive an amount of  <span id="receive"></span><br>
+                   in the year <span id="yearval"></span><br>
+                </article> 
+            </div>
+           <p>&copy; Everyone Can Get Rich</p>
+        </div>     
     </body>
 </html>
