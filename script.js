@@ -16,7 +16,7 @@ function compute()
 function myOnload()
 {
     var i = document.getElementById('rate').value;
-    document.getElementById('rateval').innerHTML=' '+ i +'%.';
+    document.getElementById('ratevalue').innerHTML=' '+ i +'%';
     years();
     hiddenResults();
 }
