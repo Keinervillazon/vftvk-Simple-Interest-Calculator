@@ -15,6 +15,8 @@ function compute()
 }
 function myOnload()
 {
+    var i = document.getElementById('rate').value;
+    document.getElementById('rateval').innerHTML=' '+ i +'%.';
     years();
     hiddenResults();
 }
@@ -57,11 +59,6 @@ function checkdata(){
           amount.focus();
           return false;
 
-    }
-    if(parseInt(rate.value) == 0){
-        alert("Please select the interest rate");
-          rate.focus();
-          return false;
     }
     showResults();
     return true;
