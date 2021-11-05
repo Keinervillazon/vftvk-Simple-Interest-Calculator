@@ -1,4 +1,81 @@
-body {background-color:tan;}
-h1{color:green;}
+/* Style for Web App - Simple Interest Calculator */
+body {
+    background-color:black;
+    padding : 0em 2em 2em 2em;
+    font-family: "Verdana", Verdana, Geneva, Tahoma, sans-serif;
 
+}
+/* main */
+.main{
+    display: grid;
+    background-color:white;
+    border-radius: 10px;
+    padding: 2em;
+}
 
+div h1{
+    color:gray;
+
+}
+#result {
+  padding-top: 20px;
+}
+#result span{
+    background-color : yellow; 
+    color : black;
+}
+
+form,#result {
+    display: grid;
+    max-width: 600px;
+    padding-left: 4rem;
+  }
+  form input{
+    max-width: 150px;
+    background: #fff;
+    border: 1px solid #aaa8a8;
+    border-radius: 3px;
+  }
+  form select{
+    max-width: 40px;
+    background: #fff;
+    border: 1px solid #aaa8a8;
+    border-radius: 3px;
+    height: 2rem;
+  }
+  form button {
+    background: lightgrey;
+    padding: 0.2rem;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+  }
+  form button:hover {
+    background: rgb(219, 217, 203);
+  }
+  
+  input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 400px) {
+    form {
+      grid-template-columns: 120px 170px 20px;
+      grid-gap: 10px;
+    }
+  
+    label,button {
+      text-align: left;
+      grid-column: 1 / 2;
+    }
+  
+    input {
+      grid-column: 2/ 3;
+    }
+    #ratevalue{
+      margin-left: 0;
+      text-align: left;
+      grid-column: 3/ 3;
+    }
+  }
