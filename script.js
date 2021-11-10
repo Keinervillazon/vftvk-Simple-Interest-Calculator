@@ -33,12 +33,12 @@ function updateRate()
     document.getElementById('rate_val').innerHTML=' '+rateval+'%';
 }
 function showResults() {
-    //Show calculation results area
+    //Show calculation results area <span>
     var v = document.getElementById('result');
     v.style.display = 'block';
 }
 function hiddenResults() {
-    //Hidde calculation results area
+    //Hidde calculation results area <span> 
     var v = document.getElementById('result');
     v.style.display = 'none';
 }
